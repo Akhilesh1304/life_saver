@@ -1,0 +1,167 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/signup.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+<script src="./js/signin.js"></script>
+</head>
+<body>
+  <div id="id02" class="modal">
+        
+    <div class="modal-content">
+          <div class="container">
+            <h1>Sign Up</h1> 
+             <div class="by-social">
+              <a href="#" class="google bn">
+                <i class="fab fa-google "></i> Login with Google+
+              </a>
+            </div>
+      
+            <div class="col">
+              <div class="hide-md-lg">
+                <p>Or sign up with</p>
+              </div>
+      
+            <p>Please fill in this form.</p>
+            <hr> 
+            <button type="button" onclick="showPosition();">Show My Position on Google Map</button>   
+
+      <form action="/submit" method="post" id="contact">
+        <div class="lable-1">
+        
+        <input type="text" name="name" placeholder="First Name" required> 
+        <input type="text" name="phone"placeholder="Phone No" required> 
+        </div>
+        <div class="lable-2">
+        <input type="text" name="email" placeholder="your@email.com" required>
+        <input type="password" name="password" placeholder="Enter Password"  required>
+       
+        </div>
+      
+        <label>
+          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+  
+        <p>By creating an account, you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+         <div>
+        <button type="submit" class="bn">Submit</button>
+
+          <button type="button" class="cancelbtn">Cancel</button> -->
+
+         <!-- </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+
+</body> -->
+ <!-- </html> -->
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link  rel="stylesheet" href="css/signup.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+crossorigin="anonymous"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- Sjs sheet -->
+<script src="./js/signup.js"></script>
+<!-- Load the intl-tel-input styles -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" /> 
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry"></script>
+</head>
+<body>
+<h1 class="text-white text-center font-weight-bold bg-success" style="font-size: 55px;"> signup </h1>
+
+	<div class="container"><br>
+		
+		<div class="col-lg-6 m-auto d-block">
+			
+			<form action="/signup" method="post" onsubmit="return validation()" class="bg-light">  
+        <div class="form-group">
+					<label for="name" class="font-weight-bold"></label>
+					<input type="text" name="name" class="form-control" id="na" placeholder="name"autocomplete="off">
+					<span id="name" class="text-danger font-weight-bold"> </span>
+				</div>
+				
+				<div class="form-group">
+					<label for="user" class="font-weight-bold"></label>
+					<input type="text" name="user" class="form-control" id="user"placeholder="Username" autocomplete="off">
+					<span id="username" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> </label>
+					<input type="password" name="pass" class="form-control" id="pass" placeholder="Password"autocomplete="off">
+					<span id="passwords" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"></label>
+					<input type="password" name="conpass" class="form-control" id="conpass"placeholder="Confirm Password" autocomplete="off">
+					<span id="confrmpass" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"> </label>
+					<input type="text" name="mobile"  class="form-control" id="mobileNumber" placeholder="Phone Number"autocomplete="off">
+					<span id="mobileno" class="text-danger font-weight-bold"> </span>
+				</div>
+
+				<div class="form-group">
+					<label class="font-weight-bold"></label>
+					<input type="text" name="email" class="form-control" id="emails" placeholder="your@gmail.com"autocomplete="off">
+					<span id="emailids" class="text-danger font-weight-bold"> </span>
+				</div>
+        <div class="form-group">
+        <button type="button" onclick="showPosition();">Detect Location</button>
+        <span id="locate" class="text-danger font-weight-bold"> </span>
+      </div>
+				<input type="submit" name="submit" value="submit" class="btn btn-success" id="buttonsubmit" 	autocomplete="off">
+        
+
+			</form><br><br>
+
+
+		</div>
+	</div>
+
+ <script>
+   var phone_number = window.intlTelInput(document.querySelector("#mobileNumber"), {
+  separateDialCode: true,
+  preferredCountries:["in"],
+  hiddenInput: "full",
+  utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+});
+
+
+    
+    </script>
+
+</body>
+</html>

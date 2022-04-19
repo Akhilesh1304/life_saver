@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+        <!-- mapbox stylesheet  (marker) -->
+      <script src="./js/acc_pos.js"defer></script>
+      <!-- <script src="./js/dis.js"defer></script> -->
+      <link rel="stylesheet" href="./css/acc.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- for direction  -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" >
+     <div class="a_g">
+    <div class="get_pos">
+        <h2>Enter ur token no. to get accident position and best route</h2>
+        <form  >  
+            <input type="string" name="token" id="token_get" placeholder="enter your token no">  
+            <input type="button" onclick="get_position()" id="location_get" value="submit" class="button button-primary">
+        </form>
+         
+    </div>
+
+    <div class="a_p">
+        <h2>if u want help plz enter token no. accept it</h2>
+        <form >  
+        <!-- <input type="string" name="token" id="token_acc" placeholder="enter your token no">   --> 
+         <input type="string" name="user_id" id="msg" placeholder="enter username">  
+        <input type="button" onclick="help()" id="accept" value="accept" class="button button-primary"> 
+    </form>
+    </div>
+     </div>
+
+    <div id='map' ></div>
+  
+
+</body> 
+</html>   

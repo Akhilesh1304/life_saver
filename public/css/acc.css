@@ -1,0 +1,30 @@
+.a_g{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.a_p{
+  display: inline-block;
+  border:2px black solid;
+  
+}
+.get_pos{
+  
+  display: inline-block;
+  border:2px black solid;
+  
+}
+
+#map{
+   
+    height: 100vh;
+    width: 100%;
+}
+
+input{
+    padding:5px 5px;
+    font-size:12px ;
+    margin:5px;
+    font-weight: bold;
+
+}
